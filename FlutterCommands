@@ -1,0 +1,39 @@
+You can run the Gradle task with the additional flags (`--stacktrace`, `--info`, `--debug`, `--scan`) from the terminal to gather more information about the build process and any errors that occur.
+
+Here's how to do it:
+
+1. **Open the Terminal**: Navigate to your Flutter project directory in the terminal.
+
+2. **Run the Gradle Wrapper**: Run the following command to execute the Gradle task for assembling the debug build. Make sure to navigate to the `android` directory of your Flutter project first.
+
+    ```bash
+    cd android
+    ```
+
+    Then you can run:
+
+    ```bash
+    ./gradlew assembleDebug --stacktrace
+    ```
+
+    For more log output:
+
+    ```bash
+    ./gradlew assembleDebug --info
+    ```
+
+    For full debug output:
+
+    ```bash
+    ./gradlew assembleDebug --debug
+    ```
+
+    For generating a build scan:
+
+    ```bash
+    ./gradlew assembleDebug --scan
+    ```
+
+Note: You can combine flags if you want. For example, `./gradlew assembleDebug --stacktrace --info`.
+
+These commands will give you detailed output logs that might help you identify the root cause of the issue. If you're not sure how to interpret the logs, you can paste the relevant sections here for further assistance.
